@@ -14,6 +14,19 @@
         margin: 0;
         padding: 0;
         text-align: center;
+        background-color: rgb(100, 108, 106);
+      }
+
+      header{
+        background-image: url('espai.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 600px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
       }
       
       .cou{
@@ -22,13 +35,16 @@
         padding: 20px;
       }
 
+      .ex img {
+        border-radius: 10px;
+        cursor: pointer;
+    
+      }
       .ex{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
-        width: 500px;
-        text-align: center;
+          display: flex;
+          justify-content: center;
+          gap: 20px;
+          flex-wrap: wrap;
       }
 
       footer{
@@ -37,9 +53,28 @@
         padding: 10%;
         margin-top: 20px;
       }
+
+      section {
+        margin-bottom: 40px;
+        background-color: rgb(97, 97, 138);
+      }
+
+      .user{
+        height: 150px;
+      }
+      .cur{
+        background-color: burlywood;
+      }
+      .cur:hover{
+        background-color: chartreuse;
+      }
       </style>
     </head>
     <body>
+      <header>
+      </header>
+      
+
       <h1>
         Websites 3D
       </h1>
@@ -52,7 +87,11 @@
           Sobre mi
         </h2>
         <p>
-          Soc una estudiant de smix 
+          Soc una estudiant de smix i aquest es el meu primer projecte de javascripts
+        </p>
+        <br>
+        <p>
+          Seguidament estan els exercicis, un es del propi planeta <b>terra girant </b> mentre que els altres dos encara estàn en procés
         </p>
       </section>
 
@@ -61,15 +100,43 @@
           Exercicis
         </h2>
         <div class="ex">
-          <img src="">
-      
-      <a href="web3d/ex1/ex1.html"> Exercici 1 </a>
-      <br>
-      <a href="ex2/exercici2.html">Exercici 2</a>
-      <br>
-      <a href="ex3/exercici3.html">Exercici 3</a>
-    </section>
+          <a href="web3d/ex1/ex1.html">
+          <img src="ex1.png.png" width="500" height="500" alt="ex1.html">
+        </a>
+          <p>Projecte 1 - Descripció breu.</p>
+          <p>
+            Es un petit programa que a l'entrar et sortira el planeta terra rotant de forma continua
+          </p>
         </div>
+
+      </section>
+      <section>
+      <br>
+      <div class="ex">
+      <a href="ex2/exercici2.html">
+        <img src="construct.png" width="500" height="500" alt="ex2.html">
+      </a>
+      <p>Projecte 2</p>
+      <br>
+      </div>
+    </section>
+    <section>
+      <div class="ex">
+      <a href="ex3/exercici3.html">
+        <img src="construct.png" width="500" height="500" alt="ex3.html">
+      </a>
+      <p>Projecte 3</p>
+      </div>
+    </section>
+    <p class="cur"><a href="curriculum.pdf.pdf" target="_blank"> Consulta el meu curriculum </a> </p>
   </div>
+
+  <footer>
+    <p>
+      © 2025 Cristina Teruel. Tots els drets reservats
+    </p>
+    <br>
+    <img class="user" src="user.jpg">
+  </footer>
     </body>
   </html>
