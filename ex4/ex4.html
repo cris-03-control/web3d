@@ -7,13 +7,19 @@
   <body>
     <a-scene mindar-face embedded color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
       <a-assets>
-        <a-asset-item id="fox" src="headphones_with_fox_ears/scene.gltf"></a-asset-item>
+        <a-asset-item id="fox" src="top_hat/scene.gltf"></a-asset-item>
     </a-assets>
 
+    <a-assets>
+      <a-asset-item id="mask" src="lk21_fashion_maskframe/scene.gltf"></a-asset-item>
+  </a-assets>
 
       <a-camera active="false" position="0 0 0"></a-camera>
       <a-entity mindar-face-target="anchorIndex: 10">
         <a-gltf-model rotation="0 -0 0" position="0 0.1 -0.5" scale="0.0028 0.0028 0.0028" src="#fox" visible="true"></a-gltf-model>
+      </a-entity>
+      <a-entity mindar-face-target="anchorIndex: 197">
+        <a-gltf-model rotation="0 -0 0" position="0 0.1 -0.5" scale="0.0028 0.0028 0.0028" src="#mask" visible="true"></a-gltf-model>
       </a-entity>
     </a-scene>
   </body>
